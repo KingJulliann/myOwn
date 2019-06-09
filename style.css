@@ -1,0 +1,1154 @@
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('../css/fonts/Bebas Neue/BebasNeueRegular.eot');
+	src: local('../css/fonts/Bebas Neue/Bebas Neue Regular'), local('BebasNeueRegular'),
+		url('../css/fonts/Bebas Neue/BebasNeueRegular.woff') format('woff'),
+		url('../css/fonts/Bebas Neue/BebasNeueRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('../css/fonts/Bebas Neue/BebasNeueBold.eot');
+	src: local('../css/fonts/Bebas Neue/Bebas Neue Bold'), local('BebasNeueBold'),
+		url('../css/fonts/Bebas Neue/BebasNeueBold.woff') format('woff'),
+		url('../css/fonts/Bebas Neue/BebasNeueBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../css/fonts/Myriad Pro/MyriadPro-Bold.eot');
+	src: local('../css/fontsMyriad Pro/Myriad Pro Bold'), local('MyriadPro-Bold'),
+		url('../css/fonts/Myriad Pro/MyriadPro-Bold.woff') format('woff'),
+		url('../css/fonts/Myriad Pro/MyriadPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../css/fonts/Myriad Pro/MyriadPro-Regular.eot');
+	src: local('../css/fonts/Myriad Pro/Myriad Pro Regular'), local('MyriadPro-Regular'),
+		url("../css/fonts/Myriad Pro/MyriadPro-Regular.woff") format('woff'),
+		url("../css/fonts/Myriad Pro/MyriadPro-Regular.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad Pro It';
+	src: url('../css/fonts/Myriad Pro It/MyriadPro-It.eot');
+	src: local('../css/fonts/Myriad Pro It/Myriad Pro Italic'), local('MyriadPro-It'),
+		url('../css/fonts/Myriad Pro It/MyriadPro-It.eot?#iefix') format('embedded-opentype'),
+		url("../css/fonts/Myriad Pro It/MyriadPro-It.woff") format('woff'),
+		url("../css/fonts/Myriad Pro It/MyriadPro-It.ttf") format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+@font-face {
+	font-family: 'a_Allgidus Dstr';
+	src: url('../css/fonts/a_Allgidus Dstr.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: "Myriad Pro", sans-serif;
+}
+
+body, html {
+	overflow-x: hidden; 
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.banner {
+	background: url('../img/bg.png') no-repeat center / cover;
+	color: #fff;
+	max-width: 1480px;
+	margin: 0 auto;
+	position: relative;
+}
+
+nav {
+	padding-top: 40px;
+}
+
+.nav-link {
+	color: #ffffff !important;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.14px;
+	padding-top: 33px !important;
+	padding-left:49px !important; 
+	padding-bottom:25px !important;
+	padding-right:35px !important;
+}
+
+.nav-btn {
+	border-radius: 10px;
+	background-color: #6e699e;
+	display: inline-block;
+	color: #ffffff;
+	font-family: "Bebas Neue";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16.52px;
+	letter-spacing: 2px;
+	padding: 10px 45px;
+}
+
+
+.nav-btn:hover,
+.about-us-btn_text:hover,
+.submit-button:hover,
+.section-btn_text:hover {
+	color: #ccccd4;
+}
+
+
+.hover-block {
+	overflow: hidden;
+}
+
+.antarctic_hover-block:hover .hover-btn, 
+.aoraki_hover-block:hover .hover-btn,
+.kiliman_hover-block:hover .hover-btn {
+	transform: translateY(0);
+}
+
+.hover-btn_body {
+	transform: translateY(0px);
+	border-radius: 10px;
+	background-color: #6e699e;
+	position:absolute;
+	top: 50%;
+	left:50%;
+	margin-left: -80px;
+	padding: 5px 35px;
+	opacity: 1;
+}
+
+.hover-btn {
+	background-color: rgba(167, 165, 183, .8);
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	/*opacity: 0.8;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*background-color: rgba(135, 127, 155, 0.13);*/
+	transform: translateY(-100%);
+	transition: all .3s ease;
+}
+
+.hover-btn_text {
+	color: #ffffff;
+	font-family: "Bebas Neue";
+	font-size: 16px;
+	font-weight: bold;s
+	line-height: 21.18px;
+	letter-spacing: 1.36px;
+}
+
+.follow_text {
+	transform: rotate(270deg);
+    opacity: 0.91;
+    color: #ffffff;
+    font-family: "Myriad Pro";
+    font-weight: bold;
+    line-height: 0.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.16px;
+    position: relative;
+    top: -30px;
+    left: -30px;
+}
+
+.follow {
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	justify-content: space-between;
+    position: absolute;
+    top: 353px;
+    padding-top: 89px;
+}
+
+hr {
+	height: 50px;
+	width: 1px;
+	margin: 10px 0; 
+	color: #fff;
+	position: relative;
+	left: 10px;
+	border: .5px solid;
+}
+
+.social {
+	width: 27px;
+	height: auto;
+	color: #fff;
+}
+
+.social_links {
+    padding-bottom: 15px;
+}
+
+.header-btn {
+	padding-top: 435px;
+	margin-left: 60px;
+}
+
+.header-btn_text {
+	color: #4b466c;
+	font-family:"Bebas Neue";
+	font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding: 13px 58px;
+    border: 0;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.service {
+	padding-top: 184px;
+	padding-bottom: 110px;
+}
+
+.service-title {
+	color: #ffffff;
+	font-family: "Myriad Pro";
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1.79px;
+}
+
+.service-item {
+	color: #ffffff;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: 1.4px;
+}
+.service-icon {
+	opacity: 0.52;
+	width: 54px;
+	height: auto;
+}
+
+.numbers {
+	padding-top: 110px;
+	padding-bottom: 15px;
+	background-color: #f8f8f8;
+}
+
+.back-numbers {
+	padding-bottom: 120px;
+}
+
+.back-numbers:after {
+	background: url(../img/mountain.png);
+	position: absolute;
+	display: block;
+	content: '';
+	width: 1257px;
+	height: 535px;
+	left: 100px;
+    top: 1000px;
+}
+
+.numbers-item,
+.tours::before,
+.days::before,
+.turists::before {
+	font-family: "Bebas Neue";
+	font-weight: bold;
+}
+
+.numbers-item {
+	opacity: 0.51;
+	color: #aeadad;
+	font-size: 72px;
+	letter-spacing: 0.72px;
+	display: block;
+	position: relative;
+}
+
+.tours::before {
+	content: 'Tour';
+	top: 45px;
+    left: 104px;
+}
+
+.days::before {
+	content: 'days \0a \20 \20 \20 of fun';
+	white-space: pre;
+	top: 15px;
+    right: 94px;
+}
+
+.turists::before {
+	content: 'happy \0a \20 \20 \20 turists';
+ 	white-space: pre;
+	top: 15px;
+    right: 104px;
+}
+
+.tours::before,
+.days::before,
+.turists::before {
+	display: block;
+	position: absolute;
+	color: #4b466c;
+	font-size: 48px;
+	letter-spacing: 0.48px;
+	line-height: 36px;
+}
+.card {
+	overflow: hidden;
+}
+.ways {
+	/*background: url('../img/adv-back.png') no-repeat center / cover;*/
+	background-color: #f8f8f8;
+}
+.aoraki_hover-block-wrap {
+	margin-bottom: 5px;
+}
+.why-us .container_title {
+	left: 296px;
+}
+.container_title {
+	opacity: 0.15;
+	color: #252222;
+	font-family: "Myriad Pro";
+	font-size: 72px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.72px;
+	position: relative;
+	left: 90px;
+}
+
+.container_text {
+	position: relative;
+    bottom: 40px;
+    color: #252222;
+	font-family: "Myriad Pro";
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 24px;
+	letter-spacing: 0.3px;
+}
+
+.card {
+	border:0;
+}
+
+.block_our-tours {
+	background-color: #e7e6e5;
+	top: unset;
+	padding: 10px 15px;
+	bottom: 0;
+}
+
+.big-block {
+	max-width: 456px;
+	left: 5px;
+}
+
+.small-block {
+	max-width: 383px;
+}
+
+
+.kiliman-title,
+.aoraki-title,
+.antarctic-title {
+	color: #434040;
+	font-family: "a_Allgidus Dstr";
+	font-weight: bold;
+	line-height: 30px;
+	letter-spacing: 1.8px;
+}
+
+.antarctic-title{
+	font-size: 24px;
+}
+
+.detail__wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	padding-top: 10px;
+}
+
+.antarctic-icon__block,
+.aoraki-icon__block,
+.kiliman-icon__block {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.aoraki-title,
+.kiliman-title {
+	font-size: 18px;
+	line-height: 24px;
+
+}
+
+.antarctic-text {
+	font-size: 16px;
+}
+
+.kiliman-text,
+.aoraki-text {
+	font-size: 14px;
+}
+
+.no-padding {
+	padding: 10px;
+}
+
+.kiliman-text,
+.aoraki-text,
+.antarctic-text {
+	color: #281313;
+	font-family: "Myriad Pro";
+	font-weight: bold;
+}
+
+.icons {
+	padding-right: 5px;
+}
+
+.slick-initialized .slick-slide
+{
+    display: flex;
+}
+
+.slider .slick-prev.slick-arrow {
+	background: url('../img/prev.png') no-repeat ;
+	position: absolute;
+    top: 320px;
+    left: -60px;
+    margin: 0 auto;
+    width: 25px;
+    height: 45px;
+    border: transparent;
+    background-size: cover;
+}
+
+.slider .slick-next.slick-arrow {
+	background: url('../img/next.png') no-repeat ;
+    position: absolute;
+    top: 320px;
+    right: -50px;
+    margin: 0 auto;
+    width: 25px;
+    height: 45px;
+    border: transparent;
+    background-size: cover;
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    opacity: 0;
+    color: #ffffff03;
+}
+
+.slick-prev:before:hover, 
+.slick-next:before:hover {
+	display: none;
+}
+
+.why-us {
+	padding-top: 140px;
+	padding-bottom: 260px;
+	background: url('../img/mount.png') no-repeat center / cover;
+}
+
+ .protecting {
+ 	background: url(../img/ecologism.png) no-repeat 20px 20px / 100px 100px;
+ 	    background-color: rgb(86%, 86%, 90%, 0.25);
+ }
+
+ .guiding {
+ 	background: url(../img/backpacker-hiking.png) no-repeat 20px 20px / 127px 114px;
+ 	    background-color: rgb(86%, 86%, 90%, 0.25);
+ }
+
+.years {
+ 	color: #ffffff;
+	font-family: "Myriad Pro";
+	font-size: 172px;
+	font-weight: 700;
+	letter-spacing: 1.72px;
+	position: relative;
+	top: -50px;
+ }
+
+.years__bold {
+	opacity: 0.61;
+	color: #1a1828;
+    font-family: "Bebas Neue";
+	font-size: 85px;
+    font-weight: 700;
+    letter-spacing: 0.72px;
+    position: absolute;
+    right: 0px;
+    top: 17px;
+}
+.footer__input {
+	max-width: 208px;
+	display: inline-block;
+}
+.footer-btn {
+	position: relative;
+    right: 4px;
+    bottom: 1px;
+}
+.why-us_card {
+	background: transparent;
+	    background-color: rgba(255,255,255, .8);
+}
+
+.why_us-wrap {
+	padding-bottom: 80px;
+}
+ .safety {
+ 	background: url(../img/shield.png) no-repeat 20px 20px / 79px 93px;
+ background-color: rgb(100%, 100%, 100%, 0.75);
+ }
+
+ .years {
+ 	color: #ffffff;
+	font-family: "Myriad Pro";
+	font-size: 172px;
+	font-weight: 700;
+	letter-spacing: 1.72px;
+	position: relative;
+	top: -50px;
+ }
+
+.quote-block {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	padding-bottom: 120px;
+}
+
+
+.quote {
+	color: #252222;
+	font-family: "Myriad Pro";
+	font-size: 24px;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 30px;
+	letter-spacing: 0.24px; 
+	max-width: 405px;
+	text-align: center;
+}
+.quote__wrap .container {
+	max-width: 775px
+}
+
+.section-btn {
+	box-shadow: inset 0 0 3px 1px rgba(66, 128, 117, 0.1);
+	border-radius: 10px;
+	background-color: #6e699e;
+}
+
+.section-btn_text {
+	color: #fefefe;
+	font-family:"Bebas Neue";
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 1.35px;
+	padding: 13px 59px;
+}
+
+
+.about-us_text {
+	color: #252222;
+	font-family: "Myriad Pro";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0.14px;
+}
+
+.about-us-btn_text {
+	color: #ffffff;
+	font-family: "Bebas Neue";
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 24px;
+	letter-spacing: 1.35px;
+	box-shadow: inset 0 0 3px 1px rgba(66, 128, 117, 0.1);
+	border-radius: 10px;
+	background-color: #6e699e;
+	padding: 14px 52px;
+}
+
+.about-us-btn_text:hover 
+
+
+.about-us-btn_text:before {
+	background: url(../img/mountain-1.png) no-repeat center / cover;
+	display: block;
+	position: absolute;
+	content: '';
+	width: 1024px;
+	height: 325px;
+	top: 300px;
+    left: 20px;
+}
+
+.testimony {
+	background-color: #adaab9;
+	border-radius: 5px;
+	padding: 40px 20px;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+}
+.slick-slide:focus {
+	outline: none;
+}
+.testimony-img__block {
+	flex-basis: 140px;
+}
+.testimony-text__block {
+	flex-basis: 315px;
+}
+.testimony-title {
+	color: #ffffff;
+	font-family: "Myriad Pro";
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 22.53px;
+	letter-spacing: 0.2px;
+    padding-top: 10px;
+}
+
+.testimony-text {
+	color: #ffffff;
+	font-family: "Myriad Pro It";
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 22.53px;
+	letter-spacing: 0.2px;
+}
+#contact_us {
+	margin-top: 100px;
+}
+
+.testimony_slider .slick-prev.slick-arrow {
+	background: url('../img/prev-1.png') no-repeat ;
+	position: absolute;
+    top: 100px;
+    left: 90px;
+    margin: 0 auto;
+    width: 28px;
+    height: 28px;
+    border: transparent;
+    background-size: cover;
+    z-index: 444;
+}
+
+.testimony_slider .slick-next.slick-arrow {
+	background: url('../img/next-1.png') no-repeat ;
+	position: absolute;
+    top: 100px;
+    right: 90px;
+    margin: 0 auto;
+    width: 28px;
+    height: 28px;
+    border: transparent;
+    background-size: cover;
+}
+
+.contact_us-questions {
+	color: #180606;
+	font-family: "Myriad Pro";
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 18px;
+	text-transform: uppercase;
+	letter-spacing: 0.24px;
+}
+
+.contact_us-move {
+	color: #180606;
+	font-family: "Myriad Pro";
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 18px;
+	letter-spacing: 0.2px;
+}
+
+.submit-button {
+	color: #ffffff;
+	font-family:"Bebas Neue";
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 24px;
+	letter-spacing: 1.35px;
+	box-shadow: inset 0 0 3px 1px rgba(66, 128, 117, 0.1);
+	border-radius: 10px;
+	background-color: #6e699e;
+	padding: 10px 81px;
+	border: 0
+}
+
+.footer {
+	background-color: #8d8b9a;
+}
+
+.list {
+	font-family: "Myriad Pro";
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.45px;
+	color: #ffffff;
+}
+
+.list:hover {
+	color: #ffffff;
+}
+
+.form-title {
+	color: #ffffff;
+	font-family: "Myriad Pro";
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.18px;
+}
+
+address,
+a.tel {
+	color: #fdfbfb;
+	font-family: "Myriad Pro";
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 0.45px;
+	}
+
+a.contacts {
+	color: #ffffff;
+	font-family: "Myriad Pro";
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.4px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 1.4em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-radius: 1px;
+	border-bottom: 3px solid #180606;;
+	opacity: 0.6;
+    font-family: "Myriad Pro", sans-serif;
+    color: lightgrey;
+    font-weight: 700;
+    font-size: 18px;
+    transition: ease-in-out 0.25s;
+  }
+  textarea {
+    min-height: 25px;
+    max-height: 500px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    resize: vertical;
+    overflow: hidden;
+  }
+
+  label {
+    font-size: 12px;
+    color: slategrey;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
+    resize: none;
+    border-bottom: 3px solid #8d8b9a;
+  }
+  
+input.name,
+input.email,
+textarea.message {
+	color: #010119;
+	font-family: "Myriad Pro";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: 0.18px;
+	padding: 0;
+}
+
+.form-control {
+	background-color: #8d8b9a;
+	border: 1px solid #ffffff;
+	color: #fff;
+	border-top-left-radius: .25rem;
+	border-bottom-left-radius: .25rem;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.footer-btn {
+	color: #8d8b9a;
+	background-color: #fff;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-right-radius: .25rem;
+	border-bottom-right-radius: .25rem;
+	border-color: #fff;
+}
+
+input.form-control[type="email"]::-webkit-input-placeholder {color:#fff;}
+input.form-control[type="email"]::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+input.form-control[type="email"]:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+input.form-control[type="email"]:-ms-input-placeholder      {color:#fff;}
+
+
+@media screen and (max-width: 1920px) {
+	.back-numbers:after {
+    	left: 360px;}
+}
+
+@media screen and (max-width: 1620px) {
+	.back-numbers:after {
+    	left: 225px;} 
+}
+
+@media screen and (max-width: 1480px) {
+	.back-numbers:after {
+    	left: 150px;}  
+}
+
+@media screen and (max-width: 1360px) {
+	.back-numbers:after {
+    	left: 50px;}  
+}
+
+@media screen and (max-width: 1310px) {
+	.back-numbers:after {
+    	display: none;}
+  
+}
+
+@media screen and (max-width: 1200px) {
+	.follow {
+		display: none;}
+
+	.days::before {
+    	right: 43px;}
+
+    .turists::before {
+    	right: 53px;}
+
+    .tours::before {
+    	left: 125px;}
+
+    .header-btn_text {
+    	padding: 10px 35px;}
+
+    .header_btn {
+    	padding-top: 330px;}
+
+    .service {
+    	padding-top: 110px;
+    	padding-bottom: 50px;}
+
+    .numbers {
+    	padding-top: 60px;}
+
+	h2.pt-5{
+    	padding-top: 0rem!important;}
+
+    .footer__input {
+    max-width: 171px;}
+
+    .testimony-text__block {
+    flex-basis: 245px;}
+    
+}
+
+@media screen and (max-width: 1100px) {
+	.slider .slick-next.slick-arrow {
+    right: -30px;}
+
+    .slider .slick-prev.slick-arrow {
+    left: -30px;}
+}
+
+	.banner__title{ 
+		display: none;
+}
+
+@media screen and (max-width: 991px) {
+	.small-block {
+    	left: 5px;}
+
+ 	.nav-link {
+ 		padding: 5px !important;}
+
+	.testimony {
+		display: block;}
+
+	#contact_us {
+		margin: 0;}
+
+	.testimony-text__block {
+		text-align: center;
+		margin-top: 20px;}
+
+	.testimony-img__block img {
+	margin: 0 auto;}
+
+	.detail__wrap img {
+		max-width: 20px}
+
+	#our_tours .slick-slide img {
+		width: 100%;}
+
+	.banner {
+		background-image: url('../img/bg-mobile.png');}
+
+	.banner__title span {
+		display: block;}
+
+	.banner__title{ 
+	font-family: "Bebas Neue";
+	display: block;
+	font-weight: 700;
+	text-align: center;
+	font-size: 70px;
+    letter-spacing: 11px;}
+
+	.header-btn {
+		padding-top: 30px;}
+
+	.antarctic_hover-block {
+		position: relative;}
+
+	.days::before {
+	    top: 50px;
+	    right: 0px;}
+
+	.turists::before {
+	    right: 0px;
+	    top: 50px;}
+	.header-btn {
+		margin-left: 0;
+		text-align: center;}
+
+	.slider .slick-next.slick-arrow,
+	.slider .slick-prev.slick-arrow {
+   		top: 50%;}
+
+    .block_antarctic,
+    .block_aoraki,
+    .block_kiliman {
+    	bottom: 0;
+    	top: unset;}
+
+    .antarctic-text {
+    	font-size: 13px;}
+
+	.quote-block {
+    padding-bottom: 20px;
+    flex-direction: column;}
+
+    .quote{
+   	padding-right: 0px;
+   	padding-bottom: 20px;
+    flex-basis: 100%;}
+
+	.section-btn {
+    flex-basis: 100%;
+    display: inline-block;}
+
+    .footer__input {
+    max-width: 111px;}
+}
+
+
+@media screen and (max-width: 767px) {
+
+	#why_us > div > div:nth-child(3) > div.col-md-4.mb-5 {
+		margin-bottom: 0 !important;
+	}
+	#why_us > div > div:nth-child(3) > div.col-md-4.years {
+		display: none !important;
+	}
+	.quote-block {
+		margin: auto;
+		text-align: center;
+	}
+	.footer {
+		text-align: center;
+	}
+	body > footer > div > div > div:nth-child(1) {
+		margin-bottom: 20px;
+	}
+	body > footer > div > div > div:nth-child(4) > div > label {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.banner__title {
+		font-size: 35px;
+		letter-spacing: 6px;
+	}
+	.service {
+		text-align: center;
+	}
+	.turists::before {
+    right: 271px;}
+
+    .days::before {
+    right: 282px;}
+
+    .quote {
+    padding: 0;
+    margin-bottom: 20px;}
+
+	.why_us-wrap {
+	    padding-bottom: 20px;}
+
+	.section-btn {
+		display: inline-block;}
+
+    .footer__input {
+    max-width: 195px;
+    margin-left: 20px;}
+}
+
+
+@media screen and (max-width: 480px) {
+	.turists::before,
+	.days::before {
+    left: 125px;}
+
+	.container_title {
+    font-size: 58px;
+    left: 50px;}
+
+    .container_text {
+    bottom: 20px;
+    font-size: 26px;}
+
+    .why-us .container_title {
+    left: 50px;}
+
+    .why-us { 
+    	padding-top: 40px;}
+
+	.about-us-btn_text:before {
+    display: none;}
+
+    .kiliman-title, .aoraki-title, .antarctic-title {
+    	font-size: 16px;
+
+}
+
+@media screen and (max-width: 320px) {
+
+	.kiliman-text,
+	.aoraki-text,
+	.antarctic-text {
+		font-size: 12px;}
+
+	.container_title {
+    font-size: 45px;
+    left: 35px;}
+
+    .container_text {
+    bottom: 35px;
+    font-size: 17px;}
+
+    .why_us-wrap {
+    padding-bottom: 20px;}
+
+    .about-us-btn_text:before {
+    display: none;}
+
+    .quote {
+    font-size: 21px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar__wrap {
+	padding-top: 16px;
+}
